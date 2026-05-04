@@ -1,0 +1,74 @@
+baseURL: "https://DOMAIN_PLACEHOLDER/"
+title: "Construction AI Tools Directory"
+theme: "PaperMod"
+languageCode: "en-us"
+
+pagination:
+  pagerSize: 20
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: Construction AI Tools Directory
+  description: "The most comprehensive directory of AI tools for construction companies, contractors, and builders"
+  keywords: [construction AI tools, construction software, contractor AI, building AI, construction technology]
+  author: Construction AI Directory
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  ShowToc: true
+  TocOpen: false
+  comments: false
+  homeInfoParams:
+    Title: "Construction AI Tools Directory"
+    Content: "Find the best AI tools for your construction business. Browse 50+ tools by category."
+  socialIcons:
+    - name: rss
+      url: "/index.xml"
+
+menu:
+  main:
+    - identifier: tools
+      name: All Tools
+      url: /tools/
+      weight: 10
+    - identifier: estimating
+      name: Estimating
+      url: /categories/estimating/
+      weight: 20
+    - identifier: project-mgmt
+      name: Project Management
+      url: /categories/project-management/
+      weight: 30
+    - identifier: safety
+      name: Safety & Compliance
+      url: /categories/safety/
+      weight: 40
+    - identifier: featured
+      name: Featured Listings
+      url: /featured/
+      weight: 50
+
+taxonomies:
+  category: categories
+  tag: tags
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
